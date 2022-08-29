@@ -5,9 +5,16 @@ namespace Patterns.Strategy.Armor
 {
     public class ChainArmor: IArmorType
     {
-        public void DamageBlock()
+        private int _blockDamage;
+
+        public ChainArmor(int blockDamage)
         {
-            Console.WriteLine("Кольчужная броня блокирует 50% урона");
+            _blockDamage = blockDamage;
+        }
+
+        public int GetBlockDamage()
+        {
+            return _blockDamage;
         }
     }
 }

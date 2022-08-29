@@ -1,12 +1,15 @@
 ﻿using System;
+using Patterns.Strategy.Interface;
 
 namespace Patterns.Strategy.Weapon
 {
     public class TwoHandedSword: IWeaponType
     {
-        public void MakeDamage()
+        public int DamageDealt { get; }
+
+        public TwoHandedSword(int damageDealt)
         {
-            Console.WriteLine("Удар двуручным мечем");
+            DamageDealt = damageDealt;
         }
     }
 }

@@ -2,6 +2,6 @@
 {
     public interface IArmorType
     {
-        void DamageBlock();
+        int GetBlockDamage();
     }
 }

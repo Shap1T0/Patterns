@@ -12,8 +12,8 @@ namespace Patterns.Strategy
         /// </summary>
         public HeavyKnight()
         {
-            ArmorType = new ChainArmor();
-            WeaponType = new TwoHandedSword();
+            ArmorType = new ChainArmor(13);
+            WeaponType = new TwoHandedSword(14);
         }
     }
 }

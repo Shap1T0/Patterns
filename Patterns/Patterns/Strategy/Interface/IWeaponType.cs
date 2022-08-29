@@ -1,7 +1,7 @@
-﻿namespace Patterns.Strategy
+﻿namespace Patterns.Strategy.Interface
 {
     public interface IWeaponType
     {
-        void MakeDamage();
+        int DamageDealt { get; }
     }
 }

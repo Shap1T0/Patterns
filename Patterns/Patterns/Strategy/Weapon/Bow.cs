@@ -1,12 +1,16 @@
 ﻿using System;
+using Patterns.Strategy.Interface;
 
 namespace Patterns.Strategy.Weapon
 {
     public class Bow: IWeaponType
     {
-        public void MakeDamage()
+        public int DamageDealt { get; }
+
+
+        public Bow(int damageDealt)
         {
-            Console.WriteLine("Выстрел из лука");
+            DamageDealt = damageDealt;
         }
     }
 }

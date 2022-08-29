@@ -24,12 +24,12 @@ namespace Patterns.Strategy
 
         public void Attack()
         {
-            WeaponType.MakeDamage();
+            HeroHealth -= WeaponType.DamageDealt;
         }
 
         public void Block()
         {
-            ArmorType.DamageBlock();
+            ArmorType.GetBlockDamage();
         }
     }
 }
